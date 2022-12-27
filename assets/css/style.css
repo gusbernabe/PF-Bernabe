@@ -120,6 +120,11 @@
     color: #C39BD3 !important;
 }
 
+.navbar-toggler {
+    border-color: gray;
+    border-radius: 20px;
+}
+
 @media only screen and (min-width: 375px){
     /* HEADER */
     
