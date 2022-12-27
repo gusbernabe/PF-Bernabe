@@ -236,6 +236,7 @@
         width: 100%;
         height: auto;
         font-family: 'Nunito Sans', sans-serif;
+        padding-bottom: 35px;
     }
 
     /* CONTENIDO__ACERCADE */
@@ -269,6 +270,7 @@
         height: auto;
         text-align: center;
         font-family: 'Nunito Sans', sans-serif;
+        padding-bottom: 35px;
     }
 
     .casilla{
