@@ -5,105 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas VIT Indumentaria</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="assets/css/style.css"/> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
    
-    <header id="cabecera">
-        
-        <div class="logo">
-            <h1><a href="index.html">VIT</a></h1>
-        </div>
-        
-        <nav class="menu">
-            <!-- Inicio menu -->
-            <ul>
+    <div id="contenedor__ofertas">
+
+        <header id="cabecera">
                 
-                <li><a href="acercade.html">SOBRE NOSOTROS</a></li>
+            <nav class="navbar navbar-expand-lg bg-black menu__navegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light logo__header" href="index.html"><strong>VIT</strong></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-light menu__item" aria-current="page" href="acercade.html">SOBRE NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light menu__item" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light menu__item" href="ofertas.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light menu__item" href="locales.html">NUESTROS LOCALES</a>
+                            </li>
+                            <li class="nav-item text-light">
+                                <a class="nav-link text-light menu__item" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-                <li><a href="productos.html">PRODUCTOS</a></li>
+        </header>  
+        
+        <main id="img__principal">
+            <img src="assets/img/Promociones.jpg" width="1000" alt="Foto modelos con ambos">
+        </main>
 
-                <li><a href="ofertas.html">OFERTAS</a></li>
+        <section id="nomenclatura">
+                
+            <h4 class="encabezado"><strong>OFERTAS</strong></h4>
 
-                <li><a href="locales.html">NUESTROS LOCALES</a></li>
+            <p class="encabezado__subtitulo">¡NO TE PIERDAS NUESTRAS PROMOCIONES!</p>
+        
+        </section>
 
-                <li><a href="contacto.html">CONTACTO</a></li>
-
-            </ul>
-            <!-- Termina menu -->
-        </nav>
-    </header>  
-    
-    <main id="img__principal">
-        <img src="assets/img/Promociones.jpg" width="1000" alt="Foto modelos con ambos">
-    </main>
-
-    <section id="nomenclatura">
+        <section id="productos">
             
-        <h2 class="encabezado">OFERTAS</h2>
+            <div id="ambos__segundafila">
+            
+                <div class="ambos__primerafila__container">
+                    <img class="img-preview" src="assets/img/Productos/Producto 4.jpg">
+                    <p class="texto__productos"><strong>CONJUNTO WHITE</strong></p>
+                    <p class="texto__productos">$ 15.000</p>
+                    <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
+                </div>
 
-        <p class="encabezado__subtitulo">¡NO TE PIERDAS NUESTRAS PROMOCIONES!</p>
-       
-    </section>
+                <div class="ambos__primerafila__container">
+                    <img class="img-preview" src="assets/img/Productos/Producto 5.jpg">
+                    <p class="texto__productos"><strong>CONJUNTO ONBOARD</strong></p>
+                    <p class="texto__productos">$ 15.000</p>
+                    <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
+                </div>
 
-    <section id="productos">
-        
-        <div id="ambos__segundafila">
-        
-            <div class="ambos__primerafila__container">
-                <img class="img-preview" src="assets/img/Productos/Producto 4.jpg">
-                <p class="texto__productos"><strong>CONJUNTO WHITE</strong></p>
-                <p class="texto__productos">$ 15.000</p>
-                <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
+                <div class="ambos__primerafila__container">
+                    <img class="img-preview" src="assets/img/Productos/Producto 6.jpg">
+                    <p class="texto__productos"><strong>CONJUNTO BLUE</strong></p>
+                    <p class="texto__productos">$ 15.000</p>
+                    <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
+                </div> 
+
             </div>
 
-            <div class="ambos__primerafila__container">
-                <img class="img-preview" src="assets/img/Productos/Producto 5.jpg">
-                <p class="texto__productos"><strong>CONJUNTO ONBOARD</strong></p>
-                <p class="texto__productos">$ 15.000</p>
-                <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
+        </section>
+
+        <section id="complemento">
+            <div class="complemento__item">
+                <h5><strong>ENVIOS</strong></h5>
+                <p>Realizamos envios dentro de Rosario</p>
             </div>
 
-            <div class="ambos__primerafila__container">
-                <img class="img-preview" src="assets/img/Productos/Producto 6.jpg">
-                <p class="texto__productos"><strong>CONJUNTO BLUE</strong></p>
-                <p class="texto__productos">$ 15.000</p>
-                <p class="texto__productos"><a class="enlace" href="">¡LO QUIERO!</a></p>
-            </div> 
+            <div class="complemento__item">
+                <h5><strong>HORARIOS DE ATENCION</strong></h5>
+                <p>Lunes a Viernes 8 a 17hs, Sabados 8 a 12hs</p>
+            </div>
 
-        </div>
+            <div class="complemento__item">
+                <h5><strong>TARJETAS</strong></h5>
+                <p>3 y 6 cuotas sin interes</p>
+            </div>
 
-    </section>
+        </section>
 
-    <section id="complemento">
-        <div class="complemento__item">
-            <h3>ENVIOS</h3>
-            <p>Realizamos envios dentro de Rosario</p>
-        </div>
+        <footer id="pie">
+            
+            <h3 class="pie__items"><a href="https://www.instagram.com/indumentaria.disden_vit/" target="_blank">INSTAGRAM</a></h3>
+            
+            <h3 class="pie__items"><a href="" target="_blank">WHATSSAPP</a></h3>
 
-        <div class="complemento__item">
-            <h3>HORARIOS DE ATENCION</h3>
-            <p>Lunes a Viernes 8 a 17hs, Sabados 8 a 12hs</p>
-        </div>
+        </footer>
 
-        <div class="complemento__item">
-            <h3>TARJETAS</h3>
-            <p>3 y 6 cuotas sin interes</p>
-        </div>
-
-    </section>
-
-    <footer id="pie">
-        
-        <h2 class="pie__items"><a href="https://www.instagram.com/indumentaria.disden_vit/" target="_blank">INSTAGRAM</a></h2>
-        
-        <h2 class="pie__items"><a href="" target="_blank">WHATSSAPP</a></h2>
-
-    </footer>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
