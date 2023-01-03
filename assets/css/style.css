@@ -125,6 +125,16 @@
     border-radius: 20px;
 }
 
+.notificacion{
+    position: absolute;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    background-color: #C39BD3;
+    top: -20px;
+    left: 265px;
+}
+
 @media only screen and (min-width: 375px){
     /* HEADER */
     
@@ -190,6 +200,7 @@
     }
 
     .ambos__primerafila__container{
+        position: relative;
         height: 600px;
         width: 325px;
         box-shadow: 0 0 20px 5px #E8DAEF ;
@@ -454,6 +465,7 @@
     }
 
     .ambos__primerafila__container{
+        position: relative;
         height: 600px;
         width: 325px;
         box-shadow: 0 0 20px 5px #E8DAEF ;
