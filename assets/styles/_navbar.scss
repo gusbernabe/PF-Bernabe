@@ -1,0 +1,23 @@
+@use '_commons' as c;
+
+.logo__header{
+    font-size: 50px;
+}
+
+.logo__header:hover{
+    color: #C39BD3 !important;
+}
+
+.menu__navegacion{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+.menu__item:hover{
+    color: #C39BD3 !important;
+}
+
+.navbar-toggler {
+    border-color: white;
+    border-radius: 20px;
+}

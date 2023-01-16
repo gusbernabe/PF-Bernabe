@@ -1,0 +1,17 @@
+// Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+$colores:(
+    fondo:black,
+    textos:black,
+    links:white,
+    notificaciones:#C39BD3,
+    hover:#C39BD3
+);
