@@ -1,20 +1,21 @@
 @use '_commons' as c;
 
 .logo__header{
+    
     font-size: 50px;
-}
-
-.logo__header:hover{
-    color: #C39BD3 !important;
+    
+    & :hover{
+        color: map-get(c.$colores, hover) !important;
+    }
 }
 
 .menu__navegacion{
-    font-family: 'Nunito Sans', sans-serif;
+    
     font-size: 20px;
-}
 
-.menu__item:hover{
-    color: #C39BD3 !important;
+    & :hover{
+        color: map-get(c.$colores, hover) !important;  
+    }
 }
 
 .navbar-toggler {

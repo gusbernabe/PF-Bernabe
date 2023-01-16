@@ -8,15 +8,18 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
-    font-family: 'Nunito Sans', sans-serif;
-}
+    background-color: map-get(c.$colores,fondo);
 
-.pie__items a{
-    color: white;
-    text-decoration-line: none;
-}
+    .pie__items {
+        
+        a{
+            color: map-get(c.$colores,links);
+        text-decoration-line: none;
+        }
+    
+        & :hover{
+            color: map-get(c.$colores, hover);
+        }
+    }
 
-.pie__items a:hover{
-    color: #C39BD3;
 }

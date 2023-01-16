@@ -8,17 +8,14 @@
 .logo__header {
   font-size: 50px;
 }
-
-.logo__header:hover {
+.logo__header :hover {
   color: #C39BD3 !important;
 }
 
 .menu__navegacion {
-  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
 }
-
-.menu__item:hover {
+.menu__navegacion :hover {
   color: #C39BD3 !important;
 }
 
@@ -434,15 +431,12 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
-  font-family: "Nunito Sans", sans-serif;
 }
-
-.pie__items a {
+#pie .pie__items a {
   color: white;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
-
-.pie__items a:hover {
+#pie .pie__items :hover {
   color: #C39BD3;
 }/*# sourceMappingURL=main.css.map */
