@@ -12,15 +12,10 @@ $colores:(
     fondo:black,
     textos:black,
     links:white,
+    fondo-body:white,
     notificaciones:#C39BD3,
     hover:#C39BD3,
     fondo-notificaciones: #C39BD3,
     color-notificaciones: white,
     sombra: #E8DAEF,
-);
-
-// Condicionante
-
-@if map-get($colores, fondo )==black
-{color: white;}
-@else {color: black;} 
+);   

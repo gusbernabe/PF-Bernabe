@@ -66,6 +66,10 @@
   grid-template-areas: "cab" "ppal" "nom" "prod" "comp" "pie";
 }
 
+body {
+  background-color: white;
+}
+
 .notificacion {
   position: absolute;
   padding: 8px;

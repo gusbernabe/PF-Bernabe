@@ -96,6 +96,10 @@
     ;
 }
 
+body{
+    background-color: map-get(c.$colores, fondo-body );
+}
+
 .notificacion{
     position: absolute;
     padding: 8px;
