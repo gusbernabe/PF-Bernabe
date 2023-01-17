@@ -22,4 +22,30 @@
         }
     }
 
+    .wsp{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        height: 80px;
+        width: 50%;
+        padding-top: 25px;
+    
+    }
+    
+    .wsp-icon{
+        color: map-get(c.$colores, links);
+    }
+    
+    .insta{
+        @extend .wsp;
+    }
+    
+    .insta-icon{
+        @extend .wsp-icon;
+    }
+
 }
+
