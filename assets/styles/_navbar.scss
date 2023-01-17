@@ -3,19 +3,15 @@
 .logo{
     height: 50px;
     padding-right: 10px;
+
 }
 
-.logo__header{
-    
+.logo__header{    
     font-size: 50px;
-    
-    & :hover{
-        color: map-get(c.$colores, hover) !important;
-    }
+
 }
 
 .menu__navegacion{
-    
     font-size: 20px;
 
     & :hover{
