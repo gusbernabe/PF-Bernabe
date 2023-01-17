@@ -87,11 +87,9 @@ body {
 }
 
 @media only screen and (min-width: 375px) {
-  /* HEADER */
   #cabecera {
     grid-area: cab;
   }
-  /* MAIN */
   #img__principal {
     grid-area: ppal;
   }
@@ -113,7 +111,6 @@ body {
   .encabezado {
     padding-top: 20px;
   }
-  /* CONTENIDO__PRODUCTOS */
   #productos {
     grid-area: prod;
     display: flex;
@@ -172,7 +169,6 @@ body {
     text-decoration: none;
     box-shadow: 0 0 20px 5px #C39BD3;
   }
-  /* CONTENIDO__LOCALES */
   #maps {
     grid-area: maps;
     display: flex;
@@ -183,7 +179,6 @@ body {
     height: auto;
     padding-bottom: 35px;
   }
-  /* CONTENIDO__ACERCADE */
   #acercade__texto {
     grid-area: acerca;
     display: flex;
@@ -198,7 +193,6 @@ body {
     width: 80%;
     margin-bottom: 25px;
   }
-  /* CONTENIDO__CONTACTO */
   #formulario {
     grid-area: formul;
     display: flex;
@@ -237,7 +231,6 @@ body {
   #formulario .button:hover {
     box-shadow: 0 0 20px 5px #C39BD3;
   }
-  /* DATOS__COMPLEMENTARIOS */
   #complemento {
     grid-area: comp;
     display: flex;
@@ -256,11 +249,9 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* HEADER */
   #cabecera {
     grid-area: cab;
   }
-  /* MAIN */
   #img__principal {
     grid-area: ppal;
   }
@@ -281,7 +272,6 @@ body {
   #nomenclatura .encabezado {
     padding-top: 20px;
   }
-  /* CONTENIDO__LOCALES */
   #maps {
     grid-area: maps;
     display: flex;
@@ -291,7 +281,6 @@ body {
     width: 100%;
     height: auto;
   }
-  /* CONTENIDO__ACERCADE */
   #acercade__texto {
     grid-area: acerca;
     display: flex;
@@ -306,7 +295,6 @@ body {
     width: 80%;
     margin-bottom: 25px;
   }
-  /* CONTENIDO__PRODUCTOS */
   #productos {
     grid-area: prod;
     display: flex;
@@ -364,7 +352,6 @@ body {
     text-decoration: none;
     box-shadow: 0 0 20px 5px #C39BD3;
   }
-  /* CONTENIDO__CONTACTOS */
   #formulario {
     grid-area: formul;
     display: flex;
@@ -402,7 +389,6 @@ body {
   #formulario .button:hover {
     box-shadow: 0 0 20px 5px #C39BD3;
   }
-  /* INFORMACION__COMPLEMENTARIA */
   #complemento {
     grid-area: comp;
     display: flex;

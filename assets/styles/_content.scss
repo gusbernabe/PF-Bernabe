@@ -100,6 +100,8 @@ body{
     background-color: map-get(c.$colores, fondo-body );
 }
 
+// DETALLES NOTIFICACIONES PRODUCTOS E ICONOS
+
 .notificacion{
     position: absolute;
     padding: 8px;
@@ -115,13 +117,13 @@ body{
 }
 
 @media only screen and (min-width: 375px){
-    /* HEADER */
+    // HEADER
     
     #cabecera{
         grid-area: cab;
     }
 
-    /* MAIN */
+    // MAIN
 
     #img__principal{
         grid-area: ppal;
@@ -149,7 +151,7 @@ body{
         padding-top: 20px;
     }
 
-    /* CONTENIDO__PRODUCTOS */
+    // CONTENIDO PRODUCTOS
 
     #productos{
         grid-area: prod;
@@ -221,9 +223,7 @@ body{
 
     }
 
-
-
-    /* CONTENIDO__LOCALES */
+    // CONTENIDO LOCALES
 
     #maps{
         grid-area: maps;
@@ -236,7 +236,7 @@ body{
         padding-bottom: 35px;
     }
 
-    /* CONTENIDO__ACERCADE */
+    // CONTENIDO ACERCA DE 
 
     #acercade__texto{
         grid-area: acerca;
@@ -254,7 +254,7 @@ body{
         margin-bottom: 25px;
     }
 
-    /* CONTENIDO__CONTACTO */
+    // CONTENIDO CONTACTO
 
     #formulario{
         grid-area: formul;
@@ -302,7 +302,7 @@ body{
 
     }
 
-    /* DATOS__COMPLEMENTARIOS */
+    // DATOS COMPLEMENTARIOS
 
     #complemento{
         grid-area: comp;
@@ -327,13 +327,13 @@ body{
 
 @media only screen and (min-width: 1280px){
     
-    /* HEADER */
+    // HEADER
 
     #cabecera{
         grid-area: cab;
     }
 
-    /* MAIN */
+    // MAIN
 
     #img__principal{
         grid-area: ppal;
@@ -361,7 +361,7 @@ body{
 
     }
 
-    /* CONTENIDO__LOCALES */
+    // CONTENIDO LOCALES
 
     #maps{
         grid-area: maps;
@@ -373,7 +373,7 @@ body{
         height: auto;
     }
 
-    /* CONTENIDO__ACERCADE */
+    // CONTENIDO ACERCA DE
 
     #acercade__texto{
         grid-area: acerca;
@@ -392,7 +392,7 @@ body{
 
     }
 
-    /* CONTENIDO__PRODUCTOS */
+    // CONTENIDO PRODUCTOS
 
     #productos{
         grid-area: prod;
@@ -462,7 +462,7 @@ body{
 
     }
 
-    /* CONTENIDO__CONTACTOS */
+    // CONTENIDO CONTACTOS
 
     #formulario{
         grid-area: formul;
@@ -509,7 +509,7 @@ body{
 
     }
 
-    /* INFORMACION__COMPLEMENTARIA */
+    // DATOS COMPLEMENTARIOS
 
     #complemento{
         grid-area: comp;
