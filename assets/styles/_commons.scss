@@ -18,3 +18,9 @@ $colores:(
     color-notificaciones: white,
     sombra: #E8DAEF,
 );
+
+// Condicionante
+
+@if map-get($colores, fondo )==black
+{color: white;}
+@else {color: black;} 
