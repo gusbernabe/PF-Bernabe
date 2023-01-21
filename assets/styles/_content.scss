@@ -185,7 +185,9 @@ body{
         .enlace {
             text-decoration: none;
             color: map-get(c.$colores, links);
-            padding: 6px;
+            padding: 7px;
+            padding-left: 14px;
+            padding-right: 14px;
             background: map-get(c.$colores, fondo);
             border-color: map-get(c.$colores, fondo);
             transition: all 1s ease;
@@ -275,7 +277,9 @@ body{
     .button {
         text-decoration: none;
         color: map-get(c.$colores, links);
-        padding: 6px;
+        padding: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
         background: map-get(c.$colores, fondo);
         border-color: map-get(c.$colores, fondo);
         transition: all 1s ease;
