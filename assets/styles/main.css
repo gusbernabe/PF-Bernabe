@@ -68,11 +68,85 @@
   grid-template-areas: "cab" "ppal" "nom" "prod" "comp" "pie";
 }
 
+#cabecera {
+  grid-area: cab;
+  background-color: black;
+  z-index: 2;
+}
+
 body {
+  z-index: 1;
   background-color: white;
 }
 
-.notificacion {
+#img__principal {
+  grid-area: ppal;
+}
+#img__principal .imgmain {
+  width: 100%;
+}
+
+#nomenclatura {
+  grid-area: nom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#nomenclatura .encabezado {
+  padding-top: 20px;
+}
+
+#productos {
+  grid-area: prod;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#productos #ambos__primerafila, #productos #ambos__segundafila {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#productos .ambos__primerafila__container {
+  position: relative;
+  height: 600px;
+  width: 325px;
+  box-shadow: 0 0 20px 5px #E8DAEF;
+  margin-bottom: 40px;
+}
+#productos .ambos__primerafila__container .img-preview {
+  height: 450px;
+  width: 325px;
+  margin-bottom: 20px;
+}
+#productos .ambos__primerafila__container .texto__productos {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#productos .ambos__primerafila__container .texto__productos--purchase {
+  text-align: center;
+}
+#productos .ambos__primerafila__container .enlace {
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  background: black;
+  border: 2px solid;
+  border-color: black;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 20px;
+}
+#productos .ambos__primerafila__container .notificacion {
   position: absolute;
   padding: 8px;
   border-radius: 20px;
@@ -82,328 +156,133 @@ body {
   left: 265px;
 }
 
-.icono-complemento {
+#maps {
+  grid-area: maps;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 35px;
+}
+
+#acercade__texto {
+  grid-area: acerca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.texto__quienessomos {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+#formulario {
+  grid-area: formul;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 35px;
+}
+#formulario .casilla {
+  width: 350px;
+  height: 20px;
+  border-radius: 20px;
+  padding: 15px !important;
+  padding-left: 10px;
+  border: solid 2px;
+}
+#formulario .casilla--text {
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 10px;
+  border: solid 2px;
+}
+#formulario .button {
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  background: black;
+  border: 2px solid;
+  border-color: black;
+  transition: all 1s ease;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#complemento {
+  grid-area: comp;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#complemento .complemento__item {
+  display: block;
+  width: auto;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#complemento .icono-complemento {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 375px) {
-  #cabecera {
-    grid-area: cab;
-  }
-  #img__principal {
-    grid-area: ppal;
-  }
-  #img__principal .imgmain {
-    width: 100%;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-  #nomenclatura {
-    grid-area: nom;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 120px;
-    padding-bottom: 10px;
-  }
-  .encabezado {
-    padding-top: 20px;
-  }
-  #productos {
-    grid-area: prod;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #productos #ambos__primerafila {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #productos #ambos__segundafila {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #productos .ambos__primerafila__container {
-    position: relative;
-    height: 600px;
-    width: 325px;
-    box-shadow: 0 0 20px 5px #E8DAEF;
-    margin-bottom: 40px;
-  }
-  #productos .ambos__primerafila__container:hover {
-    box-shadow: 0 0 20px 5px #C39BD3;
-  }
-  #productos .ambos__primerafila__container .img-preview {
-    height: 450px;
-    width: 325px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-bottom: 20px;
-  }
-  #productos .ambos__primerafila__container .texto__productos {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  #productos .ambos__primerafila__container .texto__productos--purchase {
-    text-align: center;
-  }
-  #productos .ambos__primerafila__container .enlace {
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 8px;
-    border-radius: 20px;
-  }
-  #productos .ambos__primerafila__container .enlace:hover {
-    text-decoration: none;
-    box-shadow: 0 0 20px 5px #C39BD3;
-  }
-  #maps {
-    grid-area: maps;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding-bottom: 35px;
-  }
-  #acercade__texto {
-    grid-area: acerca;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  .texto__quienessomos {
-    text-align: center;
-    width: 80%;
-    margin-bottom: 25px;
-  }
-  #formulario {
-    grid-area: formul;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding-bottom: 35px;
-  }
-  #formulario .casilla {
-    width: 400px;
-    height: 20px;
-    border-radius: 20px;
-    padding: 15px !important;
-    padding-left: 10px;
-    border: solid 2px;
-  }
-  #formulario .casilla--text {
-    width: 400px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 10px;
-    border: solid 2px;
-  }
-  #formulario .button {
-    width: 100px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    border-radius: 40px;
-    padding: 5px;
-  }
-  #formulario .button:hover {
-    box-shadow: 0 0 20px 5px #C39BD3;
-  }
-  #complemento {
-    grid-area: comp;
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  #complemento .complemento__item {
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-}
 @media only screen and (min-width: 1280px) {
   #cabecera {
-    grid-area: cab;
-  }
-  #img__principal {
-    grid-area: ppal;
-  }
-  #img__principal .imgmain {
-    width: 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-  #nomenclatura {
-    grid-area: nom;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 120px;
-  }
-  #nomenclatura .encabezado {
-    padding-top: 20px;
-  }
-  #maps {
-    grid-area: maps;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  #acercade__texto {
-    grid-area: acerca;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  #acercade__texto .texto__quienessomos {
-    text-align: center;
-    width: 80%;
-    margin-bottom: 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   #productos {
-    grid-area: prod;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  #productos #ambos__primerafila {
-    width: 100%;
-    height: 650px;
-    display: flex;
+  #productos #ambos__primerafila, #productos #ambos__segundafila {
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
   #productos #ambos__segundafila {
-    width: 100%;
-    height: 650px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
-  #productos .ambos__primerafila__container {
-    position: relative;
-    height: 600px;
-    width: 325px;
-    box-shadow: 0 0 20px 5px #E8DAEF;
-  }
-  #productos .ambos__primerafila__container:hover {
-    box-shadow: 0 0 20px 5px #C39BD3;
-  }
-  #productos .ambos__primerafila__container .img-preview {
-    height: 450px;
-    width: 325px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-bottom: 10px;
-  }
-  #productos .ambos__primerafila__container .texto__productos {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  #productos .ambos__primerafila__container .texto__productos--purchase {
-    text-align: center;
-  }
-  #productos .ambos__primerafila__container .enlace {
+  #productos .enlace:hover {
     text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 8px;
-    border-radius: 20px;
-  }
-  #productos .ambos__primerafila__container .enlace:hover {
-    text-decoration: none;
-    box-shadow: 0 0 20px 5px #C39BD3;
-  }
-  #formulario {
-    grid-area: formul;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    text-align: center;
+    background: #fff;
+    color: black;
   }
   #formulario .casilla {
     width: 600px;
-    height: 20px;
-    border-radius: 20px;
-    padding: 5px;
-    padding-left: 10px;
-    border: solid 2px;
   }
   #formulario .casilla--text {
     width: 600px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 10px;
-    border: solid 2px;
-  }
-  #formulario .button {
-    width: 100px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    border-radius: 40px;
-    padding: 5px;
   }
   #formulario .button:hover {
-    box-shadow: 0 0 20px 5px #C39BD3;
+    text-decoration: none;
+    background: #fff;
+    color: black;
   }
   #complemento {
-    grid-area: comp;
-    display: flex;
-    width: 100%;
-    height: 200px;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
   #complemento .complemento__item {
-    display: block;
     width: 25%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
   }
 }
 #pie {
