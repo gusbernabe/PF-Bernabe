@@ -18,6 +18,7 @@
         }
     
         & :hover{
+            transition: all 1s ease;
             color: map-get(c.$colores, hover);
         }
     }

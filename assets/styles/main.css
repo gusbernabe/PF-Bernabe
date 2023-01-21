@@ -18,6 +18,7 @@
   font-size: 20px;
 }
 .menu__navegacion :hover {
+  transition: all 1s ease;
   color: #C39BD3 !important;
 }
 
@@ -301,6 +302,7 @@ body {
           text-decoration-line: none;
 }
 #pie .pie__items :hover {
+  transition: all 1s ease;
   color: #C39BD3;
 }
 #pie .wsp, #pie .insta {
