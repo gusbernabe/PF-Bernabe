@@ -1,5 +1,9 @@
 @use '_commons' as c;
 
+#cabecera{
+    background-color: map-get(c.$colores, fondo);
+}
+
 .logo{
     height: 70px;
     padding-top: 15px;

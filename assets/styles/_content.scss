@@ -187,7 +187,6 @@ body{
             color: map-get(c.$colores, links);
             padding: 6px;
             background: map-get(c.$colores, fondo);
-            border: 2px solid;
             border-color: map-get(c.$colores, fondo);
             transition: all 1s ease;
             position: relative;
@@ -259,6 +258,7 @@ body{
         padding: 15px !important;
         padding-left: 10px;
         border: solid 2px;
+        background-color: map-get(c.$colores, fondo-body);
     }
 
 
@@ -269,6 +269,7 @@ body{
         padding: 10px;
         padding-left: 10px;
         border: solid 2px;
+        background-color: map-get(c.$colores, fondo-body);
     }
 
     .button {
@@ -276,11 +277,11 @@ body{
         color: map-get(c.$colores, links);
         padding: 6px;
         background: map-get(c.$colores, fondo);
-        border: 2px solid;
         border-color: map-get(c.$colores, fondo);
         transition: all 1s ease;
         border-radius: 20px;
         font-size: 15px;
+        border: none;
     }
 
 }
@@ -339,8 +340,8 @@ body{
     
         .enlace:hover {
             text-decoration: none;
-            background: #fff;
-            color: black;
+            background: map-get(c.$colores, hover);
+            color: map-get(c.$colores, links);
         }
 
     }
@@ -359,8 +360,8 @@ body{
     
         .button:hover {
             text-decoration: none;
-            background: #fff;
-            color: black;
+            background: map-get(c.$colores, hover);
+            color: map-get(c.$colores, links);
         }
 
     }
