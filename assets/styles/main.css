@@ -6,8 +6,9 @@
 }
 
 .logo {
-  height: 50px;
-  padding-right: 10px;
+  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .logo__header {
