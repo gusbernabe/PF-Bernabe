@@ -244,15 +244,15 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+#complemento .icono-complemento {
+  margin-bottom: 20px;
+}
 #complemento .complemento__item {
   display: block;
   width: auto;
   height: 50%;
   text-align: center;
   align-items: center;
-  margin-bottom: 20px;
-}
-#complemento .icono-complemento {
   margin-bottom: 20px;
 }
 

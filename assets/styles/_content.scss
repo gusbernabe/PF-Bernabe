@@ -290,7 +290,7 @@ body{
 
 }
 
-// DATOS COMPLEMENTARIOS
+// CONTENIDO COMPLEMENTO
 
 #complemento{
     grid-area: comp;
@@ -303,16 +303,16 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 
+    .icono-complemento{
+        margin-bottom: 20px;
+    }
+    
     .complemento__item{
         display: block;
         width: auto;
         height: 50%;
         text-align: center;
         align-items: center;
-        margin-bottom: 20px;
-    }
-    
-    .icono-complemento{
         margin-bottom: 20px;
     }
 }   
