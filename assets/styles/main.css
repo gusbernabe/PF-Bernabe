@@ -22,7 +22,8 @@
 .menu__navegacion {
   font-size: 20px;
 }
-.menu__navegacion :hover {
+
+.menu__item :hover {
   transition: all 1s ease;
   color: #ff6e6c !important;
 }
