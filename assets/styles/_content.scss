@@ -300,8 +300,6 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
-    margin-top: 30px;
-    margin-bottom: 30px;
 
     .icono-complemento{
         margin-bottom: 20px;
@@ -315,7 +313,7 @@ body{
         align-items: center;
         margin-bottom: 20px;
     }
-}   
+}  
 
 
 
@@ -374,6 +372,7 @@ body{
 
     #complemento{
         flex-direction: row;
+        height: 200px;
 
         .complemento__item{
             width: 25%;
