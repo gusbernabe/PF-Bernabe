@@ -201,6 +201,23 @@ body{
             left: 265px;
         }
 
+        .notificacion-1{
+            position: absolute;
+            padding: 8px;
+            border-radius: 20px;
+            color: map-get(c.$colores, links);
+            background-color: map-get(c.$colores, hover);
+            top: -20px;
+            left: 265px;
+            animation: destacado 3s infinite;
+
+            @keyframes destacado {
+                0%{background-color: map-get(c.$colores, fondo-notificaciones);}
+                50%{background-color: map-get(c.$colores, hover);}
+                100%{background-color: map-get(c.$colores, fondo-notificaciones);}
+            }
+        }
+
     }
 
 }

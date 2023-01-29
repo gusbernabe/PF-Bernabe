@@ -160,6 +160,39 @@ body {
   top: -20px;
   left: 265px;
 }
+#productos .ambos__primerafila__container .notificacion-1 {
+  position: absolute;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  background-color: #ff6e6c;
+  top: -20px;
+  left: 265px;
+  -webkit-animation: destacado 3s infinite;
+          animation: destacado 3s infinite;
+}
+@-webkit-keyframes destacado {
+  0% {
+    background-color: #67568c;
+  }
+  50% {
+    background-color: #ff6e6c;
+  }
+  100% {
+    background-color: #67568c;
+  }
+}
+@keyframes destacado {
+  0% {
+    background-color: #67568c;
+  }
+  50% {
+    background-color: #ff6e6c;
+  }
+  100% {
+    background-color: #67568c;
+  }
+}
 
 #maps {
   grid-area: maps;
