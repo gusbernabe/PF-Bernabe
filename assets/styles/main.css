@@ -89,9 +89,6 @@ body {
 #img__principal {
   grid-area: ppal;
 }
-#img__principal .imgmain {
-  width: 100%;
-}
 
 #nomenclatura {
   grid-area: nom;
