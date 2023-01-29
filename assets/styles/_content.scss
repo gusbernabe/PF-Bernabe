@@ -245,13 +245,15 @@ body{
     justify-content: center;
     width: 100%;
     height: auto;
+
+    .quienessomos{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 25px;
+    }
 }
 
-.texto__quienessomos{
-    text-align: center;
-    width: 80%;
-    margin-bottom: 25px;
-}
+
 
 // CONTENIDO CONTACTO
 
